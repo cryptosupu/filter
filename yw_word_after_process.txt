@@ -1,0 +1,11 @@
+name,type,len
+iphone11 pro max,app_keyword,16
+iphone6s plus,app_keyword,13
+iphone xs max,app_keyword,13
+iphone11 pro max,app_keyword,16
+iphone7 plus,app_keyword,12
+iphone8 plus,app_keyword,12
+iphone6s,app_keyword,8
+ipad mini,app_keyword,9
+iphone x,app_keyword,8
+iphone11,app_keyword,8

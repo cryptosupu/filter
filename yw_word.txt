@@ -1,0 +1,13 @@
+"name" "type"
+"iphone11 pro max" "app_keyword"
+"iphone6s plus" "app_keyword"
+"iphone xs max" "app_keyword"
+"iphone11 pro max" "app_keyword"
+"iphone7 plus" "app_keyword"
+"iphone8 plus" "app_keyword"
+"iphone6s" "app_keyword"
+"ipad mini" "app_keyword"
+"iphone x" "app_keyword"
+"iphone11" "app_keyword"
+
+

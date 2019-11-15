@@ -1,0 +1,11 @@
+name,pos,type,len
+iphone11 pro max,n,app,16
+iphone6s plus,n,app,13
+iphone xs max,n,app,13
+iphone11 pro max,n,app,16
+iphone7 plus,n,app,12
+iphone8 plus,n,app,12
+iphone6s,n,app,8
+ipad mini,n,app,9
+iphone x,n,app,8
+iphone11,n,app,8

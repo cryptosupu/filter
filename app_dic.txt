@@ -1,0 +1,13 @@
+"name" "pos" "type"
+"iphone11 pro max" "n" "app"
+"iphone6s plus" "n" "app"
+"iphone xs max" "n" "app"
+"iphone11 pro max" "n" "app"
+"iphone7 plus" "n" "app"
+"iphone8 plus" "n" "app"
+"iphone6s" "n" "app"
+"ipad mini" "n" "app"
+"iphone x" "n" "app"
+"iphone11" "n" "app"
+
+
