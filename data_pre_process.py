@@ -10,7 +10,7 @@ def app_dic_pos():
     app_dic = pd.read_csv('./app_dic.txt', sep=" ")
     table = pd.DataFrame(app_dic)
     table.pop('type')
-    table.to_csv('./app_dic_pos.txt', index=None, sep=' ')
+    table.to_csv('./app_dic_pos.txt', index=None, sep=' ', na_rep=-)
 
 def yw_word_pre_process():
     yw_word = pd.read_csv('./yw_word.txt', sep=" ")
@@ -22,4 +22,4 @@ def yw_word_pre_process():
 
 app_dic_pre_process()
 app_dic_pos()
-yw_word_pre_process()
+#yw_word_pre_process()

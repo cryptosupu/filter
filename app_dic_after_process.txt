@@ -9,3 +9,6 @@ iphone6s,n,app,8
 ipad mini,n,app,9
 iphone x,n,app,8
 iphone11,n,app,8
+创新办,n,app,9
+云计算,n,app,9
+信用卡,n,app,9

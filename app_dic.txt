@@ -9,5 +9,8 @@
 "ipad mini" "n" "app"
 "iphone x" "n" "app"
 "iphone11" "n" "app"
+"创新办" "n" "app"
+"云计算" "n" "app"
+"信用卡" "n" "app"
 
 
