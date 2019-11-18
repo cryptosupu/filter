@@ -15,9 +15,9 @@ app = Flask(__name__)
 @app.before_request
 def work_before_request():
     global app_dic_df, yw_word_list
-    app_dic = pd.read_csv('./app_dic_after_process.txt')
-    app_dic_df = pd.DataFrame(app_dic)
-    yw_word = pd.read_csv('./yw_word_after_process.txt')
+    #app_dic = pd.read_csv('./app_dic_after_process.txt')
+    #app_dic_df = pd.DataFrame(app_dic)
+    yw_word = pd.read_csv('./yw_word.txt', sep=" ")
     yw_word_df = pd.DataFrame(yw_word)
     yw_word_list = list(yw_word_df['name'])
     #jieba.load_userdict(app_dic_df['name'])

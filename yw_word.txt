@@ -9,5 +9,7 @@
 "ipad mini" "app_keyword"
 "iphone x" "app_keyword"
 "iphone11" "app_keyword"
+"云计算" "app_keyword"
+"信用卡" "app_keyword"
 
 
