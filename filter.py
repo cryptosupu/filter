@@ -9,6 +9,7 @@ import jieba.posseg
 import hashlib
 
 
+
 app = Flask(__name__)
 
 @app.before_request
@@ -34,37 +35,40 @@ def data_process(input):
     for item in input:
         if item['type'] == 'app':
             seg_generator = jieba.posseg.cut(item['name'])
-            print type(item['name'])
             seg_list = list(seg_generator)
             seg_list_len = len(seg_list)
             if seg_list_len == 1:
                 for word, flag in seg_list:
                     if (word.encode("utf-8") in yw_word_list) and (flag in ['n','v']):
                         md5 = hashlib.md5(item['name'].encode("utf-8")).hexdigest()
-                        result = json.dumps({'name':item['name'],'type':item['type'],'md5':md5,'num':0})
+                        result = json.dumps({'name':item['name'],'type':item['type'],'md5':md5,'num':0},ensure_ascii=False)
                         result_list.append(result)
             elif seg_list_len > 1:
+                print item['name']
                 count = 0
                 have_yw_word = False
+                item_piece_list = []
                 for word, flag in seg_list:
                     count += 1
                     if (len(word) == 1) or (flag not in ['a','ad','n','v']):
+                        print 'have single word or have illegal word'
                         break
                     if word.encode("utf-8") in yw_word_list:
+                        print 'have yw_word: ' + word
                         have_yw_word = True
+                    if word not in item_piece_list:
+                        item_piece_list.append(word) 
                     if (count == seg_list_len) and (flag in ['n','v']) and have_yw_word:
-                        //qu chong hou suan md5
-                        md5 = hashlib.md5(item['name'].encode("utf-8")).hexdigest()
-                        result = json.dumps({'name':item['name'],'type':item['type'],'md5':md5,'num':0})
+                        item_str = ''.join(item_piece_list)
+                        print item_str
+                        md5 = hashlib.md5(item_str.encode("utf-8")).hexdigest()
+                        result = json.dumps({'name':item_str,'type':item['type'],'md5':md5,'num':0},ensure_ascii=False)
                         result_list.append(result)
                         have_yw_word = False
-                        
-
-
                     
-                    
-    print json.dumps({'data':result_list})
-    return 'hello'
+    print json.dumps({'data':result_list},ensure_ascii=False)
+    return json.dumps({'data':result_list},ensure_ascii=False)
+    #return 'hello'
     
 
 if __name__ == '__main__':

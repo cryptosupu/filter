@@ -10,4 +10,5 @@ ipad mini,app_keyword,9
 iphone x,app_keyword,8
 iphone11,app_keyword,8
 信用卡,app_keyword,3
-iphone,app_keyword,3
+itphone,app_keyword,3
+云计算,app_keyword,3
